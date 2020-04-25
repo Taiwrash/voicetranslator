@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a language translator app for nigeria language"
+    />
+    <title>Native Translator</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Native Translator</h2>
+      <hr />
+      <marquee behavior="" direction="">
+        <p>Hello Select the language you want to translate from and to.</p>
+        <hr />
+        <p>Type into the box or press start to record your voices.</p>
+        <hr />
+        <p>Press translate to translate your concluded speech.</p>
+        <hr />
+      </marquee>
+      <hr />
+
+      <div class="speed">
+        <label for="rate">Rate:</label>
+        <input name="rate" type="range" min="0" max="3" value="1" step="0.1" />
+
+        <label for="pitch">Pitch:</label>
+        <input name="pitch" type="range" min="0" max="2" step="0.1" />
+      </div>
+
+      <div class="speakers-language" id="speaker-lang">
+        <label for="lang">TRANSLATE FROM</label>
+        <select name="lang" id="language-dropdown">
+          <option value="" id="native">Select a language you speak</option>
+        </select>
+        <textarea name="text" id="text-area-native"></textarea>
+      </div>
+
+      <!-- <div class="translate-language">
+        <label for="lang">TRANSLATE TO</label>
+        <select name="native-lang" id="language-dropdown">
+          <option value="" id="native"
+            >Select a language you want to translate to</option
+          > -->
+        </select>
+      </div>
+      <div class="buttons">
+        <button class="start" id="start">START TALKING</button>
+        <button class="translate" id="translate">TRANSLATE</button>
+        <button class="record-native" id="record-native">RECORD</button>
+        <button id="stop">STOP TALKING</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
